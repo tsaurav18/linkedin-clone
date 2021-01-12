@@ -1,0 +1,194 @@
+.feed {
+  flex: 0.6;
+  margin: 0 20px;
+}
+.feed__inputContainer {
+  background-color: white;
+  padding: 10px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.feed__input {
+  border: 1px solid lightgray;
+  border-radius: 30px;
+  display: flex;
+  padding: 10px;
+  color: gray;
+  padding-left: 15px;
+}
+.feed__input > form {
+  display: flex;
+  width: 100%;
+}
+.feed__input > form > input {
+  border: none;
+  flex: 1;
+  margin-left: 10px;
+  outline-width: 0;
+  font-weight: 600;
+}
+.feed__input > form > button {
+  display: none;
+}
+.feed__inputOptions {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.share__box {
+  width: 500px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 10px black;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999999;
+  padding: 10px;
+  display: none;
+}
+
+.share__box > .photo__header {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+}
+.share__box .user__headerbox {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin: auto;
+  padding: 10px;
+}
+.share__box .user__headerbox .avatar {
+  margin-right: 10px;
+}
+.share__box .input__container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.share__box .input__container > textarea {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  outline: none;
+  word-wrap: break-word;
+  overflow-y: scroll;
+  border: 1px solid white;
+}
+.share__box .shared__photobox {
+  width: 100px;
+  height: 100px;
+}
+.share__box .sharebox__fotter {
+  /* display: flex; */
+  align-items: center;
+}
+.share__box .sharebox__fotter .left__fotter {
+  display: flex;
+  align-items: center;
+
+  justify-content: left;
+  padding: 10px;
+}
+.share__box .sharebox__fotter .left__fotter > button {
+  margin: 5px;
+  font-size: 30px;
+  width: 100%;
+}
+.share__box .sharebox__fotter .right__fotter {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+}
+.share__box .sharebox__fotter .right__fotter .btn {
+  padding: 5px;
+}
+.show {
+  display: flex;
+  flex-direction: column;
+}
+
+.photo__container {
+  width: 500px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 10px black;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99999;
+  padding: 10px;
+  display: none;
+}
+.show {
+  display: flex;
+  flex-direction: column;
+}
+
+.photo__container .photo__header {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+}
+.photo__container .photo__header > h4 {
+  font-size: 23px;
+  color: black;
+  font-weight: 300;
+}
+.photo__container .photo__header > button {
+  margin: 10px;
+  border: none;
+  background-color: white;
+  padding: 7px 15px;
+  outline: none;
+  cursor: pointer;
+  font-size: 23px;
+  color: gray;
+}
+.photo__container .photo__header > button:hover {
+  background-color: whitesmoke;
+  border-radius: 10px;
+}
+.photo__container .photo__wrapper {
+  height: 300px;
+}
+.photo__container .photo__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  margin-top: 20px;
+}
+.photo__container .photo__bottom button {
+  margin-right: 10px;
+
+  border-radius: 20px;
+  padding: 7px 15px;
+  outline: none;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.photo__container .photo__bottom button:hover {
+  background-color: whitesmoke;
+}
+
+.photo__wrapper > img {
+  object-fit: contain;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 100%;
+}

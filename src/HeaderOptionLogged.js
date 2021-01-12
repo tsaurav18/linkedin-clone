@@ -1,0 +1,26 @@
+import React from "react";
+import "./HeaderOption.css";
+import { Avatar } from "@material-ui/core";
+import { useSelector } from "react-redux";
+import { selectUser } from "./features/userSlice";
+function HeaderOptionLogged({ avatar, Icon, title, onClick }) {
+  const user = useSelector(selectUser);
+  return (
+    <div onClick={onClick} className="headerOption">
+      {Icon && <Icon className="headerOption__icon" />}
+      {avatar && (
+        <Avatar className="headerOption__icon" src={user?.photoUrl}>
+          {user?.email[0]}
+        </Avatar>
+      )}
+      {user ? (
+        <h3 className="headerOption__title">{title}</h3>
+      ) : (
+        <h3 className="headerOption__title">{"Sign In"}</h3>
+      )}
+      {/* <h3 className="headerOption__title">{title}</h3> */}
+    </div>
+  );
+}
+
+export default HeaderOptionLogged;
